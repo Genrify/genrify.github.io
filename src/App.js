@@ -130,7 +130,7 @@ function App() {
             </Center>
             <Center>
               {!token ?
-                <Button pl={'md'} color={'green'} leftIcon={<IconLogin />} component='a' href={`${process.env.REACT_APP_AUTH_URL}?client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=http://localhost:3000&response_type=${process.env.REACT_APP_RESPONSE_TYPE}&scope=${scopes}`}>Login
+                <Button pl={'md'} color={'green'} leftIcon={<IconLogin />} component='a' href={`${process.env.REACT_APP_AUTH_URL}?client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=https://genrify.github.io/&response_type=${process.env.REACT_APP_RESPONSE_TYPE}&scope=${scopes}`}>Login
                   to Spotify</Button>
                 : <Button pr={'md'} color={'grape'} leftIcon={<IconLogout />} onClick={logout}>Log out</Button>}
             </Center>
