@@ -56,7 +56,7 @@ function App() {
       <header className="App-header">
         <h1>Spotify React</h1>
         {!token ?
-          <a href={`${process.env.REACT_APP_AUTH_URL}?client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=${process.env.REACT_APP_REDIRECT_URL}&response_type=${process.env.REACT_APP_RESPONSE_TYPE}&scope=${scopes}`}>Login
+          <a href={`${process.env.REACT_APP_AUTH_URL}?client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=https://genrify.github.io/&response_type=${process.env.REACT_APP_RESPONSE_TYPE}&scope=${scopes}`}>Login
             to Spotify</a>
           : <button onClick={logout}>Logout</button>}
           <div>
